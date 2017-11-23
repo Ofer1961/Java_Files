@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<script>
+			//alert('string');
+			
+			var myString ='String 111';
+			var myNum = 34.23;
+			var myArray = [1,2,3,5,6,'name'];
+			
+			var myObject = {
+				firstName: 'Ofer',
+				lastName: 'Peer',
+			};
+			var myObject1 = {
+				firstName: 'Ofer',
+				lastName: 'Peer',
+				favorit: {
+					band: 'Carpenters',
+					food: 'Ramen',
+				}
+			};
+
+			
+			//alert(myString)
+			//alert(myObject.firstName)
+			//alert(myObject.lastName)
+			
+			//alert(myArray)
+			//alert(myArray[3])
+			//alert(myObject1.favorit.food)
+			
+			/*
+			if (myObject1.favorit.food === 'Ramen' && myObject1.favorit.band === 'Carpenters'){
+				alert('Welcome to Japan')
+			}
+			else{ 
+				alert('Bye Japan')
+			}
+			*/
+			
+			/* Loops
+			var Stud = ['Ofer','Yossi','Yaackov','Moshe','Moshe'];
+			for (i=0;i<Stud.length;i++){
+				alert(i+' '+Stud[i]+i)			
+			}
+			var j=0;
+
+			do{
+				alert(j)
+				j++;
+			}while(j<4);
+			*/
+			var Students =[
+				{
+					firstName: 'Ofer',
+					lastName: 'Peer',
+					average: 75
+				},
+				{
+					firstName: 'Moti',
+					lastName: 'Peer',
+					average: 80
+				},
+				{
+					firstName: 'Erez',
+					lastName: 'Peer',
+					average: 95
+				}
+			]
+			
+			var j=0;
+			do{
+				var mess = j+' '+Students[j].firstName+' '+Students[j].lastName+' '+Students[j].average
+				//alert(j+' '+Students[j].firstName+' '+Students[j].lastName+' '+Students[j].average)
+				
+				if (Students[j].average >= 90){
+					mess += ' very good score';
+				}
+				else if (Students[j].average >= 80){
+					mess += ' good score';
+				}
+				else{
+					mess += ' ehe';
+				}
+				alert(mess)
+				j++;
+			}while(j<Students.length);
+		</script>
+	</head>
+	
+	<body>
+	<h1>Hello World</h1>
+	</body>
+</html>
